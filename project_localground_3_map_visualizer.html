@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Local Ground - Map Visualizer | JBRPG</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+	    <script src="js/html5shiv.js"></script>
+	    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<!--/head-->
+<!--
+I got plenty left to do in terms of changing up the aesthetics and
+setting up the website structure so that it fits my needs for
+showing off my work and having creative room for format and subtle color
+-->
+<body>
+    <header id="header">
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                    	<img src="images/JBRPG/jbrpg-logo.png" alt="logo">
+                    </a>
+
+                </div>
+                <!-- Evnetual goal: reformat the nav bar that features 4 colors -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right nav-color-buttons">
+                        <li id="nav_blue"><a href="index.html">Home</a></li>
+                        <li id="nav_red"><a href="aboutJBRPG.html">About</a></li>
+                        <li id="nav_purple" class="active dropdown">
+                            <a href="#">Projects <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><a href="project_localground_0_overview.html">Local Ground</a></li>
+                                <li><a href="project_randamius_overview.html">RANDAMIUS</a></li>
+                                <li><a href="project_sssaht_overview.html">SSSAHT</a></li>
+                            </ul>
+                        </li>
+                        <li id="nav_green"><a href="contactJBRPG.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="header-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="header-decoration" src="images/JBRPG/decorations/jbrpg-arrow-decoration-pattern_1.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-item-summary">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Local Ground - Map Visualizer</h1>
+                    <p>
+                        An essential element that allows users to place markers
+                        on the map to repersent various locations
+                        based on selected media.
+                    </p>
+                </div>
+                <p>
+                    <a href="project_localground_0_overview.html">
+                        Return to Local Ground Overview
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!-- Project Item Summary -->
+
+    <section id="project-item-description">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Problem</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        There has to be an intuitive way that users
+                        can easily place their data on the map
+                        to know where the data came from.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Approach</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        For users to easily place where they recorded data,
+                        I delved into Google Maps API for markers,
+                        and integrated it with actions to add, move,
+                        and delete maker at the user's will.
+                    </p>
+
+                    <a class="lightbox" href="#lgimg4">
+                        <img src="images/JBRPG/LocalGround/LGMaps1.png"/>
+                    </a>
+                    <div class="lightbox-target" id="lgimg4">
+                        <img class="localground-image" src="images/JBRPG/LocalGround/LGMaps1.png">
+                        <a class="lightbox-close" href=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Technologies Used</h2>
+                </div>
+                <div class="col-md-8">
+                    <ul>
+                        <li>
+                            <p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                Backbone
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                Marionette
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                Local Ground REST API
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                Google Maps API
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Results</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        The map visualizer became a more complete feature
+                        of Local Ground because users can simply place markers
+                        on the map and store information and media on the marker
+                        to represent a story at any location.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!-- Project Item Description -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="footer-decoration" src="images/JBRPG/decorations/jbrpg-arrow-decoration-pattern_1.png">
+                </div>
+                <div class="col-md-12">
+                    <h1>&nbsp<h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="footer-select-button jbrpg_border_green">
+                        <a href="project_localground_2_media_gallery.html"><h3>Previous Accomplishment</h3></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-select-button jbrpg_border_purple">
+                        <a href="project_localground_4_video_ui.html"><h3>Next Accomplishment</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                </div>
+                <div class="col-md-6">
+                    <div class="footer-select-button jbrpg_border_blue">
+                        <a href="project_randamius_overview.html"><h3>Next Project</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div class="copyright-text text-center">
+                    <p>&copy; John Peter McGrath 2018. All Rights Reserved.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>&nbsp<h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
